@@ -1,18 +1,19 @@
-import './App.css';
-
+import React from 'react';
 import {
   BrowserRouter as Router,
   Routes,
   Route,
 } from 'react-router-dom';
+import NavBar from './components/NavBar';
 import Home from './components/Home';
 import Categories from './components/Categories';
-import Nav from './components/Nav';
+// stylesheet
+import './App.css';
 
 function App() {
   return (
     <Router>
-      <Nav />
+      <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/categories" element={<Categories />} />

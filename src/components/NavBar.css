@@ -1,0 +1,24 @@
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.Nav {
+  display: flex;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.Nav-brand {
+  font-size: 3rem;
+}
+
+.Nav-items {
+  display: flex;
+  gap: 2rem;
+  font-size: 2rem;
+}
