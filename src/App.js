@@ -9,7 +9,6 @@ import Home from './components/Home';
 import Categories from './components/Categories';
 import Nav from './components/Nav';
 
-
 function App() {
   return (
     <Router>
