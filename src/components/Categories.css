@@ -1,0 +1,11 @@
+button {
+  border: none;
+  margin-left: 45%;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+button:hover {
+  background-color: orange;
+  cursor: pointer;
+}
