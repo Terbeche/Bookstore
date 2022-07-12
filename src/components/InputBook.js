@@ -1,30 +1,48 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaPlusCircle } from 'react-icons/fa';
-import { PropTypes } from 'prop-types';
+import { useDispatch } from 'react-redux';
 import './InputBook.css';
+import { addBook } from '../redux/books/books';
 
-const InputBook = () => (
-  <form className="form-container">
-    <input
-      type="text"
-      className="input-text"
-      placeholder="Add book..."
-      name="title"
-    />
-    <input
-      type="text"
-      className="input-text"
-      placeholder="Add author..."
-      name="author"
-    />
-    <button type="button" className="input-submit">
-      <FaPlusCircle
-        style={{ color: 'darkcyan', fontSize: '20px', marginTop: '2px' }}
+const InputBook = () => {
+  const dispatch = useDispatch();
+  const [inputBook, setInpuBook] = useState({});
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    dispatch(addBook(inputBook));
+  };
+
+  const handleInputChange = (event) => {
+    setInpuBook((book) => ({
+      ...book,
+      [event.target.name]: event.target.value,
+    }));
+  };
+
+  return (
+    <form className="form-container" onSubmit={handleSubmit}>
+      <input
+        type="text"
+        className="input-text"
+        placeholder="Add book..."
+        name="title"
+        onChange={handleInputChange}
       />
-    </button>
-  </form>
-);
-
-InputBook.propTypes = PropTypes.node;
+      <input
+        type="text"
+        className="input-text"
+        placeholder="Add author..."
+        name="author"
+        onChange={handleInputChange}
+      />
+      <button type="submit" className="input-submit">
+        <FaPlusCircle
+          style={{ color: 'darkcyan', fontSize: '20px', marginTop: '2px' }}
+        />
+      </button>
+    </form>
+  );
+};
 
 export default InputBook;
