@@ -1,8 +1,7 @@
 import axios from 'axios';
 
-const url = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi';
 export default axios.create({
-  baseURL: url,
+  baseURL: 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/xANBhTadd0N0LDKxheSJ/books',
   headers: {
     'Content-type': 'application/json',
   },
