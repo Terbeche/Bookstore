@@ -1,10 +1,17 @@
-import React from 'react';
-import { useSelector, shallowEqual } from 'react-redux';
+import React, { useEffect } from 'react';
+import { useSelector, shallowEqual, useDispatch } from 'react-redux';
+import { retrieveBooks } from '../redux/books/books';
 import InputBook from './InputBook';
 import BooksList from './BooksList';
 
 const Home = () => {
   const books = useSelector((state) => state.books, shallowEqual);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(retrieveBooks());
+  }, []);
+
   return (
     <div className="container">
       <div className="inner">

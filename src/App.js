@@ -9,13 +9,11 @@ import store from './redux/configureStore';
 import NavBar from './components/NavBar';
 import Home from './components/Home';
 import Categories from './components/Categories';
-// stylesheet
 import './App.css';
 
 function App() {
   return (
     <Provider store={store}>
-
       <Router>
         <NavBar />
         <Routes>
@@ -24,7 +22,6 @@ function App() {
         </Routes>
       </Router>
     </Provider>
-
   );
 }
 

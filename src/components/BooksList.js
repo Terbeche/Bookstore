@@ -3,11 +3,18 @@ import { PropTypes } from 'prop-types';
 import Book from './Book';
 
 const BooksList = ({ books }) => (
-  <div className="books-list">
-    {books.map(({ id, title, author }) => (
-      <Book key={id} id={id} title={title} author={author} />
-    ))}
-  </div>
+  <>
+    <ul>
+      {Object.keys(books).map((book) => (
+        <Book
+          key={book}
+          bookId={book}
+          title={books[book][0].title}
+          author={books[book][0].author}
+        />
+      ))}
+    </ul>
+  </>
 );
 
 BooksList.propTypes = PropTypes.node.isRequired;
