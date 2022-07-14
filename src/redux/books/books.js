@@ -17,7 +17,6 @@ const reducer = (state = initialState, action) => {
     case REMOVE_BOOK:
       // eslint-disable-next-line max-len
       return Object.fromEntries(Object.entries(state).filter((book) => book[0] !== payload.id));
-      // return state.filter(({ id }) => id !== payload.id);
     default:
       return state;
   }
