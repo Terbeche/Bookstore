@@ -1,7 +1,8 @@
 import { useDispatch } from 'react-redux';
 import React, { useState } from 'react';
 import { FaPlusCircle } from 'react-icons/fa';
-import { addBook } from '../../redux/books/books';
+import { addBook } from '../redux/books/books';
+import './InputBook.css';
 
 function InputBook() {
   const initFormState = {

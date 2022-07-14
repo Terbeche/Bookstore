@@ -7,8 +7,8 @@ import {
 } from 'react-router-dom';
 import store from './redux/configureStore';
 import NavBar from './components/NavBar';
-import Home from './components/books/Home';
-import Categories from './components/categories/Categories';
+import Home from './components/Home';
+import Categories from './components/Categories';
 import './App.css';
 
 function App() {
