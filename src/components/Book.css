@@ -1,0 +1,432 @@
+body {
+  background-color: #fafafa;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  background-color: #fff;
+}
+
+.Book-buttons {
+  margin: 0.188rem 0.938rem 0.125rem 0.875rem;
+  font-family: RobotoSlab, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+  padding: 1rem;
+  border-right: solid 1px #e8e8e8;
+  background-color: white;
+}
+
+.Category {
+  width: 3.063rem;
+  height: 1.125rem;
+  margin: 0 2.438rem 0 0;
+  opacity: 0.5;
+  font-family: Montserrat, sans-serif;
+  font-size: 0.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.Title {
+  margin: 0.188rem 2.125rem 0 0;
+  font-family: RobotoSlab, sans-serif;
+  font-size: 1.375rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  color: #121212;
+}
+
+.Author {
+  margin: 0.25rem 0.875rem 0 0;
+  font-family: RobotoSlab, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+.Book-container {
+  display: flex;
+  height: 10.625rem;
+  margin: 2.313rem 6.25rem 0;
+  padding: 2rem 9.188rem 1.625rem 1.688rem;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+}
+
+.Book-Information {
+  display: flex;
+  flex-direction: column;
+}
+
+.Options {
+  display: flex;
+}
+
+.Book-Detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.Progress-Detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.Progress-Container {
+  display: flex;
+}
+
+.circle-wrap {
+  width: 4.25rem;
+  height: 4.25rem;
+  background: #ddd;
+  border-radius: 50%;
+  border: 1px solid #cdcbd0;
+}
+
+.mask .fill {
+  clip: rect(0, 2.125rem, 4.25rem, 0);
+  background-color: #227ded;
+}
+
+.mask.full,
+.circle .fill {
+  animation: fill ease-in-out 3s;
+  transform: rotate(135deg);
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill {
+  width: 4.25rem;
+  height: 4.25rem;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-wrap .circle .mask {
+  clip: rect(0, 4.25rem, 4.25rem, 2.125rem);
+}
+
+.circle-wrap .inside-circle {
+  width: 3.45804988662rem;
+  height: 3.45804988662rem;
+  border-radius: 50%;
+  background: white;
+  margin-top: 0.39682539682rem;
+  margin-left: 0.39682539682rem;
+  color: #1e51dc;
+  position: absolute;
+  z-index: 100;
+}
+
+@keyframes fill {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(135deg);
+  }
+}
+
+.-Percent-Complete {
+  width: 2.938rem;
+  height: 2.438rem;
+  margin: 0.063rem 7.063rem 0 0.688rem;
+  font-family: Montserrat, sans-serif;
+  font-size: 2rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.Completed {
+  width: 5rem;
+  height: 1.125rem;
+  margin: 0.438rem 4.938rem 0.75rem 0.75rem;
+  opacity: 0.5;
+  font-family: Montserrat, sans-serif;
+  font-size: 0.875rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.Current-Chapter {
+  width: 7.875rem;
+  height: 1.125rem;
+  margin: 0.063rem 5.375rem 0 3.688rem;
+  opacity: 0.5;
+  font-family: RobotoSlab, sans-serif;
+  font-size: 0.813rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.Current-Lesson {
+  width: 13.25rem;
+  height: 1.313rem;
+  margin: 0.438rem 0 0.25rem 3.688rem;
+  font-family: RobotoSlab, sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  color: #121212;
+}
+
+.Rectangle-2 {
+  width: 11.5rem;
+  height: 2.063rem;
+  margin: 0.75rem 1.75rem 0.563rem 3.688rem;
+  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+  border-radius: 3px;
+  background-color: #0290ff;
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  .container {
+    display: flex;
+    background-color: #fff;
+  }
+
+  .Book-buttons {
+    margin: 0.188rem 0.938rem 0.125rem 0.875rem;
+    font-family: RobotoSlab, sans-serif;
+    font-size: 0.875rem;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #4386bf;
+    padding: 1rem;
+    border-right: solid 1px #e8e8e8;
+    background-color: white;
+  }
+
+  .Category {
+    width: 3.063rem;
+    height: 1.125rem;
+    margin: 0 2.438rem 0 0;
+    opacity: 0.5;
+    font-family: Montserrat, sans-serif;
+    font-size: 0.875rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #121212;
+  }
+
+  .Title {
+    margin: 0.188rem 2.125rem 0 0;
+    font-family: RobotoSlab, sans-serif;
+    font-size: 1.375rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.2px;
+    color: #121212;
+  }
+
+  .Author {
+    margin: 0.25rem 0.875rem 0 0;
+    font-family: RobotoSlab, sans-serif;
+    font-size: 0.875rem;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #4386bf;
+  }
+
+  .Book-container {
+    display: flex;
+    height: 10.625rem;
+    margin: 2.313rem 6.25rem 0;
+    padding: 2rem 9.188rem 1.625rem 1.688rem;
+    border-radius: 4px;
+    border: solid 1px #e8e8e8;
+    background-color: #fff;
+  }
+
+  .Book-Information {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Options {
+    display: flex;
+  }
+
+  .Book-Detail {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Progress-Detail {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Progress-Container {
+    display: flex;
+  }
+
+  .circle-wrap {
+    width: 4.25rem;
+    height: 4.25rem;
+    background: #ddd;
+    border-radius: 50%;
+    border: 1px solid #cdcbd0;
+  }
+
+  .mask .fill {
+    clip: rect(0, 2.125rem, 4.25rem, 0);
+    background-color: #227ded;
+  }
+
+  .mask.full,
+  .circle .fill {
+    animation: fill ease-in-out 3s;
+    transform: rotate(135deg);
+  }
+
+  .circle-wrap .circle .mask,
+  .circle-wrap .circle .fill {
+    width: 4.25rem;
+    height: 4.25rem;
+    position: absolute;
+    border-radius: 50%;
+  }
+
+  .circle-wrap .circle .mask {
+    clip: rect(0, 4.25rem, 4.25rem, 2.125rem);
+  }
+
+  .circle-wrap .inside-circle {
+    width: 3.45804988662rem;
+    height: 3.45804988662rem;
+    border-radius: 50%;
+    background: white;
+    margin-top: 0.39682539682rem;
+    margin-left: 0.39682539682rem;
+    color: #1e51dc;
+    position: absolute;
+    z-index: 100;
+  }
+
+  @keyframes fill {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(135deg);
+    }
+  }
+
+  .-Percent-Complete {
+    width: 2.938rem;
+    height: 2.438rem;
+    margin: 0.063rem 7.063rem 0 0.688rem;
+    font-family: Montserrat, sans-serif;
+    font-size: 2rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #121212;
+  }
+
+  .Completed {
+    width: 5rem;
+    height: 1.125rem;
+    margin: 0.438rem 4.938rem 0.75rem 0.75rem;
+    opacity: 0.5;
+    font-family: Montserrat, sans-serif;
+    font-size: 0.875rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #121212;
+  }
+
+  .Current-Chapter {
+    width: 7.875rem;
+    height: 1.125rem;
+    margin: 0.063rem 5.375rem 0 3.688rem;
+    opacity: 0.5;
+    font-family: RobotoSlab, sans-serif;
+    font-size: 0.813rem;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #121212;
+  }
+
+  .Current-Lesson {
+    width: 13.25rem;
+    height: 1.313rem;
+    margin: 0.438rem 0 0.25rem 3.688rem;
+    font-family: RobotoSlab, sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.4px;
+    color: #121212;
+  }
+
+  .Rectangle-2 {
+    width: 11.5rem;
+    height: 2.063rem;
+    margin: 0.75rem 1.75rem 0.563rem 3.688rem;
+    padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+    border-radius: 3px;
+    background-color: #0290ff;
+    color: #fff;
+  }
+}
