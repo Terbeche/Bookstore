@@ -10,7 +10,7 @@ body {
 
 .Book-buttons {
   margin: 0.188rem 0.938rem 0.125rem 0.875rem;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
@@ -28,7 +28,7 @@ body {
   height: 1.125rem;
   margin: 0 2.438rem 0 0;
   opacity: 0.5;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 0.875rem;
   font-weight: bold;
   font-stretch: normal;
@@ -40,7 +40,7 @@ body {
 
 .Title {
   margin: 0.188rem 2.125rem 0 0;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 1.375rem;
   font-weight: bold;
   font-stretch: normal;
@@ -52,7 +52,7 @@ body {
 
 .Author {
   margin: 0.25rem 0.875rem 0 0;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
@@ -103,6 +103,17 @@ body {
   border: 1px solid #cdcbd0;
 }
 
+.mask .fill {
+  clip: rect(0, 2.125rem, 4.25rem, 0);
+  background-color: #227ded;
+}
+
+.mask.full,
+.circle .fill {
+  animation: fill ease-in-out 3s;
+  transform: rotate(135deg);
+}
+
 .circle-wrap .circle .mask,
 .circle-wrap .circle .fill {
   width: 4.25rem;
@@ -127,17 +138,6 @@ body {
   z-index: 100;
 }
 
-.mask .fill {
-  clip: rect(0, 2.125rem, 4.25rem, 0);
-  background-color: #227ded;
-}
-
-.mask.full,
-.circle .fill {
-  animation: fill ease-in-out 3s;
-  transform: rotate(135deg);
-}
-
 @keyframes fill {
   0% {
     transform: rotate(0deg);
@@ -152,7 +152,7 @@ body {
   width: 2.938rem;
   height: 2.438rem;
   margin: 0.063rem 7.063rem 0 0.688rem;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 2rem;
   font-weight: normal;
   font-stretch: normal;
@@ -167,7 +167,7 @@ body {
   height: 1.125rem;
   margin: 0.438rem 4.938rem 0.75rem 0.75rem;
   opacity: 0.5;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 0.875rem;
   font-weight: normal;
   font-stretch: normal;
@@ -182,7 +182,7 @@ body {
   height: 1.125rem;
   margin: 0.063rem 5.375rem 0 3.688rem;
   opacity: 0.5;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 0.813rem;
   font-weight: 300;
   font-stretch: normal;
@@ -196,7 +196,7 @@ body {
   width: 13.25rem;
   height: 1.313rem;
   margin: 0.438rem 0 0.25rem 3.688rem;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 1rem;
   font-weight: 300;
   font-stretch: normal;
@@ -216,16 +216,15 @@ body {
   color: #fff;
 }
 
-
 @media (min-width: 992px) {
   .container {
     display: flex;
-    background-color: fff;
+    background-color: #fff;
   }
 
   .Book-buttons {
     margin: 0.188rem 0.938rem 0.125rem 0.875rem;
-    font-family: RobotoSlab;
+    font-family: RobotoSlab, sans-serif;
     font-size: 0.875rem;
     font-weight: 300;
     font-stretch: normal;
@@ -243,7 +242,7 @@ body {
     height: 1.125rem;
     margin: 0 2.438rem 0 0;
     opacity: 0.5;
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     font-size: 0.875rem;
     font-weight: bold;
     font-stretch: normal;
@@ -255,7 +254,7 @@ body {
 
   .Title {
     margin: 0.188rem 2.125rem 0 0;
-    font-family: RobotoSlab;
+    font-family: RobotoSlab, sans-serif;
     font-size: 1.375rem;
     font-weight: bold;
     font-stretch: normal;
@@ -265,10 +264,9 @@ body {
     color: #121212;
   }
 
-
   .Author {
     margin: 0.25rem 0.875rem 0 0;
-    font-family: RobotoSlab;
+    font-family: RobotoSlab, sans-serif;
     font-size: 0.875rem;
     font-weight: 300;
     font-stretch: normal;
@@ -319,6 +317,17 @@ body {
     border: 1px solid #cdcbd0;
   }
 
+  .mask .fill {
+    clip: rect(0, 2.125rem, 4.25rem, 0);
+    background-color: #227ded;
+  }
+
+  .mask.full,
+  .circle .fill {
+    animation: fill ease-in-out 3s;
+    transform: rotate(135deg);
+  }
+
   .circle-wrap .circle .mask,
   .circle-wrap .circle .fill {
     width: 4.25rem;
@@ -343,16 +352,7 @@ body {
     z-index: 100;
   }
 
-  .mask .fill {
-    clip: rect(0, 2.125rem, 4.25rem, 0);
-    background-color: #227ded;
-  }
 
-  .mask.full,
-  .circle .fill {
-    animation: fill ease-in-out 3s;
-    transform: rotate(135deg);
-  }
 
   @keyframes fill {
     0% {
@@ -368,7 +368,7 @@ body {
     width: 2.938rem;
     height: 2.438rem;
     margin: 0.063rem 7.063rem 0 0.688rem;
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     font-size: 2rem;
     font-weight: normal;
     font-stretch: normal;
@@ -383,7 +383,7 @@ body {
     height: 1.125rem;
     margin: 0.438rem 4.938rem 0.75rem 0.75rem;
     opacity: 0.5;
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     font-size: 0.875rem;
     font-weight: normal;
     font-stretch: normal;
@@ -398,7 +398,7 @@ body {
     height: 1.125rem;
     margin: 0.063rem 5.375rem 0 3.688rem;
     opacity: 0.5;
-    font-family: RobotoSlab;
+    font-family: RobotoSlab, sans-serif;
     font-size: 0.813rem;
     font-weight: 300;
     font-stretch: normal;
@@ -412,7 +412,7 @@ body {
     width: 13.25rem;
     height: 1.313rem;
     margin: 0.438rem 0 0.25rem 3.688rem;
-    font-family: RobotoSlab;
+    font-family: RobotoSlab, sans-serif;
     font-size: 1rem;
     font-weight: 300;
     font-stretch: normal;
