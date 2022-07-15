@@ -14,3 +14,7 @@ button:hover {
   background-color: orange;
   cursor: pointer;
 }
+
+h2 {
+  text-align: center;
+}

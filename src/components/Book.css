@@ -352,8 +352,6 @@ body {
     z-index: 100;
   }
 
-
-
   @keyframes fill {
     0% {
       transform: rotate(0deg);
