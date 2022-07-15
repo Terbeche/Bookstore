@@ -1,8 +1,13 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 button {
   border: none;
   margin-left: 45%;
   padding: 2rem;
-  margin-top: 2rem;
+  margin-top: 10rem;
 }
 
 button:hover {

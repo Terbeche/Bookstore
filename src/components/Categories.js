@@ -12,10 +12,11 @@ function Categories() {
   };
 
   return (
-    <>
-      <h2>{categories}</h2>
+    <div>
       <button type="button" onClick={() => showStatus()}>Check status</button>
-    </>
+      <h2>{categories}</h2>
+
+    </div>
   );
 }
 
